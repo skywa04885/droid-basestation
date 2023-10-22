@@ -17,6 +17,12 @@ void setup() {
   MyDisplay::getInstance().setup();
   MyCom::getInstance().setup();
   MyGPS::getInstance().setup();
+
+  // Enables the GPS.
+  MyGPS::getInstance().enable();
+
+  // Enables the com.
+  MyCom::getInstance().enable();
 }
 
 void loop() {
